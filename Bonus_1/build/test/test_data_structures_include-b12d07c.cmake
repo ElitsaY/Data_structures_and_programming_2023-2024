@@ -1,0 +1,5 @@
+if(EXISTS "/home/lyuben/cpp/sdp/Data_structures_and_programming_2023-2024/Seminar_4/build/test/test_data_structures_tests-b12d07c.cmake")
+  include("/home/lyuben/cpp/sdp/Data_structures_and_programming_2023-2024/Seminar_4/build/test/test_data_structures_tests-b12d07c.cmake")
+else()
+  add_test(test_data_structures_NOT_BUILT-b12d07c test_data_structures_NOT_BUILT-b12d07c)
+endif()
