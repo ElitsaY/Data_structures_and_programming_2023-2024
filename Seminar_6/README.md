@@ -67,3 +67,10 @@ Write a function that removes a given node from a linked list. The function take
 ```c++
 void deleteBefore(LinkedListNode*, LinkedListNode*);
 ```
+
+## Task 9
+
+Write a function to clear an entire linked list. The function takes a linked list node ***LinkedListNode\**** pointing to the beginning of a linked list as an argument.
+```c++
+void clear(LinkedListNode*);
+```
