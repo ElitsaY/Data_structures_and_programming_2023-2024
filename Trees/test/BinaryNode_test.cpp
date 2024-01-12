@@ -202,7 +202,7 @@ TEST_CASE("lowest common ancestor(SampleBinaryTree, 0, 5), returns 2", "[solutio
     delete n1;
 }
 
-// RIGHT SIGHT VIEW
+// RIGHT SIDE VIEW
 
 /*
          6
@@ -213,3 +213,35 @@ TEST_CASE("lowest common ancestor(SampleBinaryTree, 0, 5), returns 2", "[solutio
       / \
      3   5
 */
+
+TEST_CASE("rightSideView(SampleBinaryTree), returns 2", "[solution]") {
+    //Sample Binary Search Tree
+    BinaryNode* n9 = new BinaryNode(9);
+    BinaryNode* n8 = new BinaryNode(7);
+    BinaryNode* n7 = new BinaryNode(5);
+    BinaryNode* n6 = new BinaryNode(3);
+    BinaryNode* n5 = new BinaryNode(4, n6, n7);
+    BinaryNode* n4 = new BinaryNode(0);
+    BinaryNode* n3 = new BinaryNode(8, n8, n9);
+    BinaryNode* n2 = new BinaryNode(2, n4, n5);
+    BinaryNode* n1 = new BinaryNode(6, n1, n2);
+
+    BinaryNode* root = n1;
+
+    std::vector<int> actual = rightSideView(root);
+    std::vector<int> expected = std::vector<int>{6,8,9,5};
+    REQUIRE(actual.size() == expected.size());
+    for (int i = 0; i < expected.size(); ++i) {
+        CHECK(actual[i] == expected[i]);
+    }
+
+    delete n4;
+    delete n6;
+    delete n7;
+    delete n8;
+    delete n9;
+    delete n5;
+    delete n3;
+    delete n2;
+    delete n1;
+}
