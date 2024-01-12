@@ -13,4 +13,4 @@ struct BinaryNode{
 
 BinaryNode* lowestCommonAncestor(BinaryNode* root, BinaryNode* node1, BinaryNode* node2);
 std::vector<int> rightSideView(BinaryNode* root);
-BinaryNode* flatten(BinaryNode* root);
+void flatten(BinaryNode* &root);

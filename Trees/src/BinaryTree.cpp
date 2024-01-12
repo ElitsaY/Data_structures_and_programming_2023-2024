@@ -38,7 +38,7 @@ std::vector<int> rightSideView(BinaryNode* root){
 	throw "Unimplemented";
 }
 
-BinaryNode* flatten(BinaryNode* root){
+void flatten(BinaryNode* &root){
     throw "Unimplemented";
 }
 
