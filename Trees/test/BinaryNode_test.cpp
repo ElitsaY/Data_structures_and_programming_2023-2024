@@ -26,7 +26,7 @@ TEST_CASE("lowest common ancestor(SampleBinaryTree, 3, 5), returns 4", "[solutio
     BinaryNode* n4 = new BinaryNode(0);
     BinaryNode* n3 = new BinaryNode(8, n8, n9);
     BinaryNode* n2 = new BinaryNode(2, n4, n5);
-    BinaryNode* n1 = new BinaryNode(6, n1, n2);
+    BinaryNode* n1 = new BinaryNode(6, n2, n3);
 
     BinaryNode* root = n1;
     BinaryNode* p = n6;
@@ -66,7 +66,7 @@ TEST_CASE("lowest common ancestor(SampleBinaryTree, 4, 5), returns 4", "[solutio
     BinaryNode* n4 = new BinaryNode(0);
     BinaryNode* n3 = new BinaryNode(8, n8, n9);
     BinaryNode* n2 = new BinaryNode(2, n4, n5);
-    BinaryNode* n1 = new BinaryNode(6, n1, n2);
+    BinaryNode* n1 = new BinaryNode(6, n2, n3);
 
     BinaryNode* root = n1;
     BinaryNode* p = n5;
@@ -105,7 +105,7 @@ TEST_CASE("lowest common ancestor(SampleBinaryTree, 0, 9), returns 6", "[solutio
     BinaryNode* n4 = new BinaryNode(0);
     BinaryNode* n3 = new BinaryNode(8, n8, n9);
     BinaryNode* n2 = new BinaryNode(2, n4, n5);
-    BinaryNode* n1 = new BinaryNode(6, n1, n2);
+    BinaryNode* n1 = new BinaryNode(6, n2, n3);
 
     BinaryNode* root = n1;
     BinaryNode* p = n4;
@@ -144,7 +144,7 @@ TEST_CASE("lowest common ancestor(SampleBinaryTree, 0, 4), returns 2", "[solutio
     BinaryNode* n4 = new BinaryNode(0);
     BinaryNode* n3 = new BinaryNode(8, n8, n9);
     BinaryNode* n2 = new BinaryNode(2, n4, n5);
-    BinaryNode* n1 = new BinaryNode(6, n1, n2);
+    BinaryNode* n1 = new BinaryNode(6, n2, n3);
 
     BinaryNode* root = n1;
     BinaryNode* p = n4;
@@ -183,7 +183,7 @@ TEST_CASE("lowest common ancestor(SampleBinaryTree, 0, 5), returns 2", "[solutio
     BinaryNode* n4 = new BinaryNode(0);
     BinaryNode* n3 = new BinaryNode(8, n8, n9);
     BinaryNode* n2 = new BinaryNode(2, n4, n5);
-    BinaryNode* n1 = new BinaryNode(6, n1, n2);
+    BinaryNode* n1 = new BinaryNode(6, n2, n3);
 
     BinaryNode* root = n1;
     BinaryNode* p = n4;
@@ -224,7 +224,7 @@ TEST_CASE("rightSideView(SampleBinaryTree), returns 2", "[solution]") {
     BinaryNode* n4 = new BinaryNode(0);
     BinaryNode* n3 = new BinaryNode(8, n8, n9);
     BinaryNode* n2 = new BinaryNode(2, n4, n5);
-    BinaryNode* n1 = new BinaryNode(6, n1, n2);
+    BinaryNode* n1 = new BinaryNode(6, n2, n3);
 
     BinaryNode* root = n1;
 
