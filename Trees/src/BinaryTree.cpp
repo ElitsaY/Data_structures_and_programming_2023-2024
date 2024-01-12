@@ -1,5 +1,4 @@
-#include"BinaryNode.h"
-#include<vector>
+#include "BinaryTree.h"
 
 //Получавате двоично наредено дърво (BST) и два върха от дървото, върнете техният Lowest Common Ancestor (първият им общо родител)
 //Примери:
@@ -18,7 +17,7 @@
 //LCA(4, 7) = 6
 //LCA(0, 3 ) = 2
 BinaryNode* lowestCommonAncestor(BinaryNode* root, BinaryNode* node1, BinaryNode* node2){
-    return root;
+    throw "Unimplemented";
 }
 
 
@@ -36,11 +35,11 @@ BinaryNode* lowestCommonAncestor(BinaryNode* root, BinaryNode* node1, BinaryNode
 */
 //Резултатът от функцията rightSideView - трябва да е {7, 5, 3, 1} 
 std::vector<int> rightSideView(BinaryNode* root){
-  
+	throw "Unimplemented";
 }
 
-// BinaryNode* flatten(BinaryNode* root){
-    
-// }
+BinaryNode* flatten(BinaryNode* root){
+    throw "Unimplemented";
+}
 
 
