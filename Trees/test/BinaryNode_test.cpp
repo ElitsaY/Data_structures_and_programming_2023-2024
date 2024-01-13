@@ -278,6 +278,7 @@ TEST_CASE("flatten(SampleBinaryTree), returns 6 8 9 5", "[solution]") {
     for (int i = 0; i < expected.size(); ++i) {
         REQUIRE(root != nullptr);
         CHECK(root->val == expected[i]);
+        root = root->right;
     }
 
     delete n4;
